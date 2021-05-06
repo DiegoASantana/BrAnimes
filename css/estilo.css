@@ -1,55 +1,159 @@
 body{
-    margin: 0;
+    margin: 0; /** coloca margem, e tbm coloca espaço entre um elemento e outro **/
 }
 
 .container{
-    width: 960px;
-    margin: auto;
+    width: 960px; /** define o tamanho da caixa na horizontal **/
+    margin: auto; /** centraliza no meio **/
 }
 
 header{
-    background-color: #000000;
+    background-color: #000000; /** define a cor de fundo **/
     color: #ffffff;
 }
 
 header .container{
-    display: flex;
-    align-items: center;
+    display: flex; /** coloca os itens lado a lado **/
+    align-items: center; /** alinha na vertical **/
 }
 
 #logo{
-    width: 250px;
+    width: 250px; /** definiu o tamnaho da caixa logo **/
 }
 
 #logo img{
-    width: 100%;
+    width: 100%; /** colocou pra imagem usar 100% da caixa logo **/
 }
 
 #direita{
-    flex-grow: 1;
-    text-align: center;
+    flex-grow: 1; /** fex a caixa usar todo o tamanho que sobrou. serve tbm para Definir a largura do elemento em relação aos outros elementos do mesmo container  **/
+    text-align: center; /** Centraliza o texto **/
 }
 
 #direita p{
-    letter-spacing: 5px;
+    letter-spacing: 5px; /** aumentou o espaço entre as letras **/
     font-size: 14pt;
-    font-style: italic;
-    font-weight: bold;
+    font-style: italic; /** deixou italico **/
+    font-weight: bold; /** deixou negrito **/
 }
 
 header nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /** colocou espaço entre os links **/
 }
 
 header nav a{
     color: #ffffff;
-    text-decoration: none;
-    padding: 5px;
-    text-transform: uppercase;
+    text-decoration: none; /** tirou o sublinhado do texto **/
+    padding: 5px; /** deixou espaço entre as bordas da caixa e os links **/
+    text-transform: uppercase; /** deixou tudo em maiúsculo **/ 
 }
 
 header nav a:hover{
     background-color: #ff0;
     color: #000;
 }
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px; /** deixou espaço entre as bordas da caixa e os textos **/
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between; /** se fosse space-around colocava espaço antes e depois de cada um **/
+}
+
+footer nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer nav a:hover{
+    color: #ff0;
+    text-decoration: underline overline; /** colocou uma linha em cima e embaixo de cada link **/
+}
+
+main{
+    width: 960px; /** definiu o tamanho da pagina na horizontal **/
+    margin: auto; /** margem alinhada na horizontal **/
+    min-height: 500px; /** tamanho mínimo do main na vertical **/
+}
+
+main h1{
+    text-align: center;
+}
+
+.texto_banner{
+    font-size: 30pt;
+    text-align: center;
+    margin: 20px 0px; /** 20px foi em cima e embaixo e 0px foi esquerda e direita **/
+}
+
+#assistir, #assinar{
+    text-decoration: none;
+    width: 300px;
+    height: 50px;
+    color: #ffffff;
+    display: block; /** transformou o link num bloco 'botão'. dando uma largura maior entre o texto e a caixa. **/
+    font-size: 18pt;
+    margin: auto; /** deixou toda a caixa 'botão' no meio da página. **/
+    line-height: 50px; /** alinhou o texto do link 'botão' no meio da vertical.  **/
+    border-radius: 20px; /** arredondou os cantos do 'botão' deixando a borda arredondada.  **/
+    box-shadow: 0px 0px 5px #000000; /** colocou sombra no 'botão' **/
+}
+
+#assistir{
+    background-color: #2003c7;
+}
+
+#assinar{
+    background-color: #880404;
+}
+
+.destaque{
+    background-color: #4d4ca3; /** fundo **/
+    margin-top: 20px; /** margem em cima **/
+    margin-bottom: 20px; /** margem em baixo **/
+    padding: 20px; /** espaçamento dentro da caixa **/
+    border-radius: 10px; /** arrendodou as bordas da caixa **/
+    box-shadow: 0px 0px 5px #000; /** sombreou as bordas da caixa **/
+}
+
+.destaque div{
+    display: flex;
+/** overflow: auto >>>>> colocaria uma barra de rolagem **/
+}
+
+.destaque figure img{
+    width: 150px; /** definiu o tamanho das figuras **/
+}
+
+.programacao{
+    display: flex; /** colocou os elementos lado a lado **/
+    flex-wrap: wrap; /** quebra de linha automático se não tiver espaço **/
+}
+.programacao h3{
+    width: 100%; /** fez que a linha ficasse inteira para o título h3. **/
+}
+
+.programacao article img{
+    width: 150px; /** colocou as imagens todas com 150px de tamanho **/
+}
+
+.programacao article{
+    width: 50%; /** dividiu a tela em 2 deixando cada artigo com 50% da tela na horizontal. **/
+    display: flex; /** deixou o titulo do desenho e as estrelas ao lado da imagem  **/
+    padding: 10px; /** deu espaçamento ao redor das imagens **/
+    box-sizing: border-box; /** trava o conteúdo para o tamanho 50% **/
+    /** box-sizing é ligado com o padding, width heigth e o border. **/
+}
+
+.programacao article section{
+    padding: 30px; /** aumentou o espaçamento ao redor do titulo e das estrelas. afastando da imagem **/
+}
+
+
+
