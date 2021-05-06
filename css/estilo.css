@@ -129,6 +129,12 @@ main h1{
 
 .destaque figure img{
     width: 150px; /** definiu o tamanho das figuras **/
+    box-shadow: 0px 0px 5px #000; /** colocou sombra nas imagens **/
+}
+
+.destaque figcaption{
+    font-weight: bold;
+    text-align: center;
 }
 
 .programacao{
@@ -155,5 +161,65 @@ main h1{
     padding: 30px; /** aumentou o espaçamento ao redor do titulo e das estrelas. afastando da imagem **/
 }
 
+#destaque_plus{
+    display: flex; /** colocou as imagens lado a lado **/
+}
 
+#destaque_plus p{
+    text-align: center; /** alinhou os texto centralizados **/
+}
 
+.planos{
+    width: 300px; /** definiu o tamanho da caixa section **/
+    text-align: center; /** alinhou o texto centralizado **/
+    margin: 20px auto; /** colocou espaço entre cima e baixo e deixou centralizado na horizontal**/
+    border: 2px solid #15bd2c; /** desenhou a borda **/
+    border-radius: 50px; /** arrendondou os cantos da caixa **/
+    padding: 50px; /** deu espaço dentro da caixa **/
+}
+
+.planos ul{
+    text-align: left; /** alinhou o texto da lista na esquerda **/
+}
+
+.planos p span{
+    font-size: 22pt;
+    color: #ff0000;
+}
+
+#galeria{
+    display: flex; /** alinhou as imagens çado a lado **/
+    flex-wrap: wrap; /** comando para quebrar linha se não couber tudo **/
+    justify-content: center; /** alinhou as imagens no centro da página **/
+}
+
+#galeria img{
+    width: 200px; /** tamanho das imagens **/
+    margin: 10px 8px; /** espaço entre 10px das imagens de cima e baixo, e 8px das laterais **/
+}
+
+#contato{
+    display: flex; 
+    justify-content: space-around; /** colocou espaço ao redor da imagem e das areas de texto **/
+}
+
+input, textarea{
+    display: block; /** colocou as caixas em blocos para mudar altura e largura **/
+    width: 300px; /** definiu a largura das caixas de texto **/
+    background-color: #cccccc; /** cor dos fundos das caixas de texto **/
+    margin: 20px; /** colocou espaço entre as caixas de texto **/
+    padding: 10px; /** colocou espaço dentro das caixas de texto **/
+    border-radius: 20px; /** arrendondou as caixas de texto **/
+    border: none; /** tirou a borda das caixas **/
+}
+
+#contato button{
+    font-size: 18pt;
+    width: 60%; /** com % colocou o botão pra usar 60% das laterais da caixa **/
+    height: 40px; /** definiu o tamnho do botão de cima para baixo **/
+    margin: 0px 80px; /** arrumou a posição do botão **/
+    background-color: #fc7e09; /** cor de fundo do botão **/
+    border-radius: 50px; /** arrendondou as bordas do botão **/
+    border: none; /** tirou a borda do botão **/
+    cursor: pointer; /** faz o mouse virar uma mãosinha de clicar **/
+}
